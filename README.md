@@ -9,12 +9,12 @@ This library reads both first **and second(*)** datagrams, the first contained e
 
 LaCrosse TX23 is a wind speed and direction sensor. It uses 3 wires for communication and power:
 ```
-Pin1 - Brown(Black) - DATA Add 10K external pullup to Vcc
-Pin2 - Red - Vcc (3.3V works, not sure if 5V OK)
+Pin1 - Brown(Black) - DATA
+Pin2 - Red - Vcc (3.3V works, don't know if 5V OK)
 Pin3 - Green - N/C
 Pin4 - Yellow - GND
 ```
-DATA pin is to be connected directly to one of Arduino digital input pins, with 10K pullup to Vcc.
+DATA pin is to be connected directly to one of Arduino digital input pins, with **external 10K pullup** to Vcc.
 
 (*) See comments in https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
 
