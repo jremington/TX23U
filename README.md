@@ -18,6 +18,6 @@ DATA pin is to be connected directly to one of Arduino ports.
 
 (*) See comments in https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
 
-Logic analyser capture of a valid TX23U transmission showing two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams have are identical values.
+Logic analyzer capture of a valid TX23U transmission showing two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams have are identical values.
 
 ![TX23U_datagrams](https://github.com/user-attachments/assets/651a8f8d-b067-4187-9e43-20c105912102)
