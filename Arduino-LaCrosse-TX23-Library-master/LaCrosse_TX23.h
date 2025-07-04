@@ -9,7 +9,7 @@
   
   DATA pin is to be connected directly to one of Arduino ports.
   
-  
+  Mods by S. J. Remington to read second datagram, with wind gust values  7/4/2025
   
   Created by Krzysztof Egzmont, 06.11.2016.
   Based on https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
@@ -46,7 +46,7 @@ class LaCrosse_TX23
       bool valid; // true if read successful
       float speed; // wind speed in m/s
       uint16_t direction; // wind direction in degrees 0-359
-	  float gustspeed;
+	  float gustspeed;  //last gust speed?
     };
 
     Data read();
