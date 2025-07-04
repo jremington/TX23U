@@ -18,13 +18,15 @@ DATA pin is to be connected directly to one of Arduino digital input pins, with 
 
 (*) See reader comments at end of https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
 
-Logic analyzer capture of a valid TX23U transmission showing the two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams have identical values. The "double hump" is the start sequence of each data frame.
+### Logic analyzer capture 
+
+of a valid TX23U transmission showing the two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams have identical values. The "double hump" is the start sequence of each data frame.
 
 
 ![TX23U_datagrams](https://github.com/user-attachments/assets/651a8f8d-b067-4187-9e43-20c105912102)
 
 
 
-## Retired product photo
+### Retired product photo
 
 ![Capture](https://github.com/user-attachments/assets/0e48135c-db13-449a-9c72-3901b71edb2d)
