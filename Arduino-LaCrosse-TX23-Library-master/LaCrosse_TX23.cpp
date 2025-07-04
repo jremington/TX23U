@@ -54,7 +54,7 @@ unsigned int LaCrosse_TX23::getBitTime(void)
 	while (digitalRead(_pin) == HIGH); //two high bits
 	while (digitalRead(_pin) == LOW);  //one low bit
 	unsigned int result = (micros()-start)/3;
-	_delay(2000);  //must wait to retrigger sensor
+	_delay(2000);  //must wait before retriggering sensor
 	return result;
 }
 
