@@ -16,7 +16,7 @@ Pin4 - Yellow - GND
 ```
 DATA pin is to be connected directly to one of Arduino digital input pins, with **external 10K pullup** to Vcc.
 
-(*) See comments in https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
+(*) See reader comments at end of https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
 
 Logic analyzer capture of a valid TX23U transmission showing the two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams have identical values. The "double hump" is the start sequence of each data frame.
 
