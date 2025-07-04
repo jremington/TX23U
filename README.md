@@ -1,5 +1,5 @@
 # TX23U
-La Crosse wind speed and direction Arduino interface library
+## La Crosse wind speed and direction Arduino interface library
 
 Based on https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol/
 
