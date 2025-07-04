@@ -1,24 +1,32 @@
 #include <Arduino.h>
+//new version of library, new example code by SJR
 #include <LaCrosse_TX23.h>
 
-//DATA wire connected to arduino port 10
-LaCrosse_TX23 anemometer = LaCrosse_TX23(10);
+//DATA wire connected to arduino pin 2
+LaCrosse_TX23 anemometer = LaCrosse_TX23(2);
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop()
 {
-  String dirTable[]= {"N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"};
-	float speed;
+  const char * dirTable[]= {"N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"};
+	float speed, gustspeed;
 	uint16_t direction;
   
-	if(anemometer.read(speed, direction))
+	if(anemometer.read(speed, direction, gustspeed))
   {
-    Serial.println("Speed = " + String(speed,1) + " m/s");
-    Serial.println("Dir = " + String(direction) + "° " + dirTable[int(direction/22.5)]);    
+    Serial.print("Speed = ");
+    Serial.print(speed,1);
+    Serial.print(" Gust = ");
+    Serial.print(gustspeed,1);
+    Serial.print(" m/s");
+    Serial.print(" Dir = ");
+    Serial.print(direction);
+    Serial.print("° ");
+    Serial.println(dirTable[int(direction/22.5)]);    
   }
   else
   {
@@ -26,6 +34,6 @@ void loop()
   }
 
 	
-	//delay between succesive read requests must be at least 2sec, otherwise wind speed will read 0.
+	//delay between successive read requests must be at least 2sec, otherwise wind speed will read 0.
 	delay(2000);
 }
