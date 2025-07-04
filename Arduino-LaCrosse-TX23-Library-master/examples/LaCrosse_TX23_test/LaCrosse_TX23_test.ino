@@ -8,6 +8,10 @@ LaCrosse_TX23 anemometer = LaCrosse_TX23(2);
 void setup()
 {
   Serial.begin(115200);
+  while(!Serial) delay(1); 
+  Serial.print("Bit time ");
+  Serial.print(anemometer.getBitTime());  //FYI only, supposed to depend on temperature. I got 1216 us at 25C
+  Serial.println(" us");
 }
 
 void loop()
