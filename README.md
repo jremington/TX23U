@@ -25,6 +25,6 @@ Logic analyzer capture of a valid TX23U transmission showing the two back-to-bac
 
 
 
-#Retired product
+## Retired product
 
 ![Capture](https://github.com/user-attachments/assets/0e48135c-db13-449a-9c72-3901b71edb2d)
