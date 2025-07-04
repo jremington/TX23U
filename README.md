@@ -20,7 +20,7 @@ DATA pin is to be connected directly to one of Arduino digital input pins, with 
 
 ### Logic analyzer capture 
 
-of a valid TX23U transmission showing the two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams have identical values. The "double hump" is the start sequence of each data frame.
+of a valid TX23U transmission showing the two back-to-back datagrams. In this case the wind speed and gust speed are both zero, so the two datagrams contain identical data. The "double hump" is the start sequence of each data frame.
 
 
 ![TX23U_datagrams](https://github.com/user-attachments/assets/651a8f8d-b067-4187-9e43-20c105912102)
