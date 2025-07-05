@@ -111,7 +111,7 @@ bool LaCrosse_TX23::readRaw(uint16_t &speed, uint8_t &direction, uint16_t &gusts
 // second copy of message with presumably recent gust speed 
 // (returns to lower values or zero after some number of intervals)
 
-	while(digitalRead(_pin)==HIGH);
+	while(digitalRead(_pin) == HIGH);
 	while(digitalRead(_pin) == LOW);  //wait for LOW, then time to HIGH (start of start frame)
 	lastState = 1;
 	start = micros();
